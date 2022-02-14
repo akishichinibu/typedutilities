@@ -1,10 +1,10 @@
 {
   "name": "@akishichinibu/typedutilities",
   "version": "0.0.1",
-  "description": "",
+  "description": "The collection for type utilities in Typescript",
   "main": "dist/index.js",
   "scripts": {
-    "prettier": "prettier --write ./src/",
+    "prettier": "prettier --write ./src",
     "test": "jest",
     "yalc": "yalc",
     "clean": "rm -rf ./dist",
