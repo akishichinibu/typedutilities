@@ -26,12 +26,19 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v2
+
       - uses: actions/setup-node@v2
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+
       - run: yarn
-      - run: yarn version 
+
+      - id: get_version
+        uses: battila7/get-version-action@v2
+
+      - run: yarn version --new-version ${{ steps.get_version.outputs.version-without-v }} --no-git-tag-version
+
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
