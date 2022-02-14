@@ -6,11 +6,11 @@
   "scripts": {
     "prettier": "prettier --write ./src",
     "test": "jest",
-    "yalc": "yalc",
-    "clean": "rm -rf ./dist",
     "watch": "tsc -w & tsc-alias -w",
+    "clean": "rimraf ./dist",
     "prebuild": "npm run clean",
-    "build": "tsc && tsc-alias"
+    "build": "tsc && tsc-alias",
+    "prepare": "npm run build"
   },
   "author": "akishichinibu@gmail.com",
   "license": "MIT",
