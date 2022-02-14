@@ -1,8 +1,8 @@
 {
   "name": "@akishichinibu/typedutilities",
-  "version": "0.0.1",
+  "version": "PLACEHOLDER",
   "description": "The collection for type utilities in Typescript",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "scripts": {
     "prettier": "prettier --write ./src",
     "test": "jest",
