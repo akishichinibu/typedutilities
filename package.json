@@ -4,7 +4,7 @@
   "description": "The collection for type utilities in Typescript",
   "main": "dist/src/index.js",
   "scripts": {
-    "prettier": "prettier --write ./src",
+    "prettier": "prettier --write ./src ./test",
     "test": "jest",
     "watch": "tsc -w & tsc-alias -w",
     "clean": "rimraf ./dist",
@@ -25,6 +25,7 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.3",
     "tsc-alias": "^1.5.0",
+    "typedoc": "^0.22.11",
     "typescript": "^4.5.5"
   },
   "publishConfig": {
